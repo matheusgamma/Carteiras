@@ -506,7 +506,7 @@ df_comprar = df_comprar.sort_values("Diferença (pp)", ascending=False)
 df_vender  = df_vender.sort_values("Diferença (pp)", ascending=True)  # mais negativo primeiro
 
 with st.container(border=True):
-    st.markdown("### ✅ Resumo (do jeito que o cliente entende)")
+    st.markdown("### ✅ Resumo ")
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Aderência ao modelo", f"{cmp['similarity_pct']:.0f}%")
     c2.metric("Ativos em comum", f"{cmp['common_assets']}")
